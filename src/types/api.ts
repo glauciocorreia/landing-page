@@ -1,3 +1,5 @@
+import SectionReviews from 'components/SectionReviews'
+
 export type TechIcon = {
   title: string
   icon: {
@@ -89,6 +91,19 @@ export type SectionAboutUsProps = {
   authors: Author[]
 }
 
+export type Review = {
+  photo: {
+    url: string
+  }
+  name: string
+  text: string
+}
+
+export type SectionReviewsProps = {
+  title: string
+  reviews: Review[]
+}
+
 export type LandingPageProps = {
   logo: LogoProps
   header: HeaderProps
@@ -99,4 +114,5 @@ export type LandingPageProps = {
   sectionAgenda: SectionAgendaProps
   pricingBox: PricingBoxProps
   sectionAboutUs: SectionAboutUsProps
+  sectionReviews: SectionReviewsProps
 }
